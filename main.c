@@ -3,7 +3,7 @@
 char* days[] = {"SUN","MON","TUE","WED","THUR","FRI","SAT"};
 char* months[] = {"January","February","March","April","May","June","July","August","September","October","November","December"};
 int noOfDays[] ={31,28,31,30,31,30,31,31,30,31,30,31};
-
+//Funtion to find day 
 int findDay(int d, int m, int y)
 {
     if(!(m>=1 && m<=12)){
@@ -81,6 +81,7 @@ void monthCalendar(int month, int year)
         int days = noOfDays[month-1];
         printf("\n----------------%s----------------\n\n",months[month-1]);
         printf("    S    M    T    W    T    F    S\n");
+        //for printing 
         for(int i=0;i<count;i++)
         {
             printf("     ");
